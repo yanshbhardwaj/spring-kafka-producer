@@ -1,0 +1,740 @@
+2021-12-31 15:20:42,261 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} Starting KafkaProducerApplication using Java 15.0.2 on yaambs18-Latitude-E7240 with PID 46967 (/home/yaambs18/Desktop/Spring Assignment/kafka-producer/target/classes started by yaambs18 in /home/yaambs18/Desktop/Spring Assignment/kafka-producer)
+2021-12-31 15:20:42,265 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} No active profile set, falling back to default profiles: default
+2021-12-31 15:20:43,800 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {main} Tomcat initialized with port(s): 8081 (http)
+2021-12-31 15:20:43,812 [INFO] org.apache.catalina.core.StandardService {main} Starting service [Tomcat]
+2021-12-31 15:20:43,813 [INFO] org.apache.catalina.core.StandardEngine {main} Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-31 15:20:43,895 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {main} Initializing Spring embedded WebApplicationContext
+2021-12-31 15:20:43,895 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {main} Root WebApplicationContext: initialization completed in 1542 ms
+2021-12-31 15:20:44,059 [INFO] com.sample.kafkaproducer.KafkaConfig {main} Setting up Configuration for the kafka Producer
+2021-12-31 15:20:44,060 [INFO] com.sample.kafkaproducer.KafkaConfig {main} Successfully set up Producer configuration
+2021-12-31 15:20:44,536 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {main} Tomcat started on port(s): 8081 (http) with context path ''
+2021-12-31 15:20:44,549 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} Started KafkaProducerApplication in 3.158 seconds (JVM running for 4.356)
+2021-12-31 15:21:33,268 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {http-nio-8081-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-31 15:21:33,269 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-1} Initializing Servlet 'dispatcherServlet'
+2021-12-31 15:21:33,270 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-1} Completed initialization in 1 ms
+2021-12-31 15:21:33,306 [INFO] com.zaxxer.hikari.HikariDataSource {http-nio-8081-exec-1} HikariPool-1 - Starting...
+2021-12-31 15:21:33,799 [INFO] com.zaxxer.hikari.HikariDataSource {http-nio-8081-exec-1} HikariPool-1 - Start completed.
+2021-12-31 15:21:33,860 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:33,879 [INFO] org.apache.kafka.clients.producer.ProducerConfig {http-nio-8081-exec-1} ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-12-31 15:21:34,093 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka version: 3.0.0
+2021-12-31 15:21:34,094 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka commitId: 8cb0a5e9d3441962
+2021-12-31 15:21:34,094 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka startTimeMs: 1640944294092
+2021-12-31 15:21:34,459 [INFO] org.apache.kafka.clients.Metadata {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Cluster ID: zhW7QWMPTtOJdH3gCQ_ukw
+2021-12-31 15:21:34,502 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,503 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,503 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,504 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,504 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,505 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,505 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,505 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,506 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,506 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,506 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,507 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,507 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:21:34,507 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:21:34,507 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 15:22:47,723 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,725 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,725 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,726 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,726 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,726 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,727 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,727 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,727 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,727 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,727 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,728 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,728 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,728 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:22:47,729 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:22:47,730 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 15:25:05,872 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,873 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,873 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,873 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,874 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,874 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,874 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,875 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,875 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,875 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,875 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,876 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,876 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,877 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:25:05,877 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:25:05,877 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-5} Data successfully published to the Topic.
+2021-12-31 15:32:10,244 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,258 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,258 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,259 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,260 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,260 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,261 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,261 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,261 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,262 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,262 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,263 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,263 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,265 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:32:10,265 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:32:10,267 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-7} Data successfully published to the Topic.
+2021-12-31 15:36:48,401 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,402 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,402 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,403 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,403 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,404 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,404 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,404 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,405 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,405 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,405 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,406 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,406 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,407 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:36:48,407 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:36:48,407 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-9} Data successfully published to the Topic.
+2021-12-31 15:37:19,360 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,362 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,363 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,365 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,378 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,388 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,388 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,395 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,401 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,408 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,410 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,412 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,413 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,416 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:37:19,417 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 15:37:19,417 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-10} Data successfully published to the Topic.
+2021-12-31 15:38:14,015 [INFO] org.apache.kafka.clients.producer.KafkaProducer {SpringApplicationShutdownHook} [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-12-31 15:38:14,022 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Metrics scheduler closed
+2021-12-31 15:38:14,022 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-12-31 15:38:14,022 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Metrics reporters closed
+2021-12-31 15:38:14,023 [INFO] org.apache.kafka.common.utils.AppInfoParser {SpringApplicationShutdownHook} App info kafka.producer for producer-1 unregistered
+2021-12-31 15:38:14,025 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} HikariPool-1 - Shutdown initiated...
+2021-12-31 15:38:14,035 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} HikariPool-1 - Shutdown completed.
+2021-12-31 16:38:11,972 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} Starting KafkaProducerApplication using Java 15.0.2 on yaambs18-Latitude-E7240 with PID 7048 (/home/yaambs18/Desktop/Spring Assignment/kafka-producer/target/classes started by yaambs18 in /home/yaambs18/Desktop/Spring Assignment/kafka-producer)
+2021-12-31 16:38:11,975 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} No active profile set, falling back to default profiles: default
+2021-12-31 16:38:14,200 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {main} Tomcat initialized with port(s): 8081 (http)
+2021-12-31 16:38:14,219 [INFO] org.apache.catalina.core.StandardService {main} Starting service [Tomcat]
+2021-12-31 16:38:14,220 [INFO] org.apache.catalina.core.StandardEngine {main} Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-31 16:38:14,375 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {main} Initializing Spring embedded WebApplicationContext
+2021-12-31 16:38:14,376 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {main} Root WebApplicationContext: initialization completed in 2226 ms
+2021-12-31 16:38:14,679 [INFO] com.sample.kafkaproducer.KafkaConfig {main} Setting up Configuration for the kafka Producer
+2021-12-31 16:38:14,685 [INFO] com.sample.kafkaproducer.KafkaConfig {main} Successfully set up Producer configuration
+2021-12-31 16:38:15,688 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {main} Tomcat started on port(s): 8081 (http) with context path ''
+2021-12-31 16:38:15,729 [INFO] com.sample.kafkaproducer.KafkaProducerApplication {main} Started KafkaProducerApplication in 4.853 seconds (JVM running for 5.705)
+2021-12-31 16:38:59,144 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {http-nio-8081-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-31 16:38:59,145 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-1} Initializing Servlet 'dispatcherServlet'
+2021-12-31 16:38:59,146 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-1} Completed initialization in 1 ms
+2021-12-31 16:38:59,187 [INFO] com.zaxxer.hikari.HikariDataSource {http-nio-8081-exec-1} HikariPool-1 - Starting...
+2021-12-31 16:38:59,860 [INFO] com.zaxxer.hikari.HikariDataSource {http-nio-8081-exec-1} HikariPool-1 - Start completed.
+2021-12-31 16:38:59,907 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:38:59,934 [INFO] org.apache.kafka.clients.producer.ProducerConfig {http-nio-8081-exec-1} ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-12-31 16:39:00,261 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka version: 3.0.0
+2021-12-31 16:39:00,265 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka commitId: 8cb0a5e9d3441962
+2021-12-31 16:39:00,266 [INFO] org.apache.kafka.common.utils.AppInfoParser {http-nio-8081-exec-1} Kafka startTimeMs: 1640948940259
+2021-12-31 16:39:00,825 [INFO] org.apache.kafka.clients.Metadata {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Cluster ID: v_jorZA6TBahyUY8qSiX_A
+2021-12-31 16:39:00,890 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,891 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,891 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,891 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,892 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,892 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,892 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,893 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,893 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,893 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,893 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,893 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,895 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:39:00,895 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:39:00,896 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-1} Data successfully published to the Topic.
+2021-12-31 16:41:02,870 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,872 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,872 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,876 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,880 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,881 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,881 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,882 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,882 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,883 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,883 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,884 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,884 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,885 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,886 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,887 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:41:02,888 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Producer is Publishing data to the Topic=KafkaTopic2
+2021-12-31 16:41:02,888 [INFO] com.sample.kafkaproducer.Controller {http-nio-8081-exec-3} Data successfully published to the Topic.
+2021-12-31 16:42:37,861 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:38,013 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:38,265 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:38,668 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:39,424 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:40,332 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:41,441 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:42,400 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:43,359 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:44,267 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:45,325 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:46,486 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:47,343 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:48,453 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:49,613 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:50,520 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:51,575 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:52,482 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:53,338 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:54,545 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:55,656 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:56,815 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:57,924 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:59,084 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:42:59,941 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:00,999 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:02,159 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:03,115 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:04,172 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:05,028 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:06,136 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:07,293 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:08,401 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:09,306 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:10,463 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:11,469 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:12,525 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:13,531 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:14,688 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:15,744 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:16,850 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:17,956 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:18,962 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:20,168 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:21,073 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:22,230 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:23,437 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:24,645 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:25,802 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:27,009 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:27,916 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:28,772 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:29,728 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:30,785 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:31,991 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:33,197 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:34,303 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:35,510 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:36,717 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:37,624 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:38,479 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:39,534 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:40,489 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:41,646 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:42,651 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:43,557 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:44,614 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:45,570 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:46,474 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:47,429 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:48,285 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:49,190 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:50,146 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:51,252 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:52,460 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:53,517 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:54,724 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:55,630 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:56,687 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:57,592 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:58,798 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:43:59,853 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:00,859 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:01,915 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:03,021 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:04,227 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:05,083 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:06,039 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:07,245 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:08,402 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:09,459 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:10,565 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:11,671 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:12,627 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:13,733 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:14,840 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:15,996 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:17,203 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:18,359 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:19,315 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:20,220 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:21,076 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:22,032 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:22,888 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:24,094 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:25,100 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:26,308 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:27,464 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:28,319 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:29,274 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:30,230 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:31,135 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:32,242 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:33,299 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:34,256 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:35,312 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:36,469 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:37,574 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:38,580 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:39,486 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:40,592 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:41,698 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:42,653 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:43,860 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:44,867 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:45,874 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:47,080 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:47,936 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:48,993 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:50,049 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:51,155 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:52,111 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:53,016 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:54,021 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:55,177 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:55,981 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:57,188 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:58,294 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:44:59,300 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:00,305 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:01,211 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:02,216 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:03,422 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:04,328 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:05,334 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:06,490 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:07,395 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:08,401 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:09,608 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:10,664 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:11,821 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:12,727 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:13,883 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:15,090 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:16,245 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:17,251 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:18,307 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:19,362 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:20,318 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:21,272 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:22,378 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:23,585 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:24,640 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:25,847 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:26,904 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:28,061 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:29,168 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:30,174 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:31,229 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:32,285 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:33,441 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:34,347 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:35,352 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:36,257 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:37,364 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:38,419 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:39,525 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:40,681 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:41,888 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:42,744 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:43,951 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:45,158 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:46,265 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:47,170 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:48,276 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:49,433 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:50,638 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:51,694 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:52,749 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:53,705 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:54,609 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:55,766 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:56,822 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:57,777 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:58,582 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:45:59,485 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:00,540 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:01,343 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:02,247 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:03,403 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:04,358 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:05,364 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:06,219 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:07,225 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:08,281 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:09,236 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:10,192 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:11,198 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:12,405 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:13,461 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:14,617 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:15,773 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:16,829 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:17,785 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:18,740 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:19,696 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:20,903 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:21,959 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:22,965 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:23,870 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:25,027 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:25,981 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:26,887 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:28,043 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:29,250 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:30,457 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:31,412 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:32,267 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:33,373 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:34,478 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:35,585 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:36,440 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:37,345 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:38,351 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:39,407 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:40,463 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:41,419 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:42,424 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:43,329 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:44,485 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:45,339 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:46,294 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:47,300 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:48,506 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:49,611 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:50,566 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:51,722 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:52,577 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:53,532 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:54,488 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:55,393 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:56,398 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:57,303 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:58,308 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:46:59,514 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:00,519 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:01,524 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:02,680 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:03,484 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:04,439 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:05,495 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:06,349 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:07,305 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:08,259 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:09,163 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:10,369 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:11,223 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:12,329 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:13,234 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:14,138 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:14,991 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:15,845 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:16,900 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:17,855 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:19,011 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:19,916 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:20,770 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:21,824 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:22,878 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:23,833 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:24,837 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:25,992 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:27,097 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:27,951 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:28,905 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:29,910 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:31,065 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:31,968 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:32,922 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:33,826 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:34,730 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:35,584 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:36,739 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:37,794 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:38,799 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:39,703 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:40,607 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:41,612 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:42,467 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:43,421 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:44,375 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:45,580 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:46,785 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:47,940 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:48,995 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:50,100 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:50,954 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:52,009 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:53,013 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:53,867 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:54,922 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:55,777 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:56,932 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:57,886 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:58,890 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:47:59,994 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:01,150 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:02,255 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:03,460 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:04,666 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:05,571 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:06,576 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:07,481 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:08,687 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:09,840 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:10,845 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:11,950 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:12,805 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:13,658 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:14,713 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:15,768 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:16,823 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:17,978 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:18,832 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:19,936 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:20,840 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:21,744 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:22,649 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:23,754 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:24,759 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:25,968 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:27,174 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:28,228 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:29,282 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:30,387 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:31,592 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:32,546 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:33,650 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:34,805 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:35,759 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:36,613 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:37,818 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:38,777 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:39,782 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:40,787 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:41,790 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:42,896 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:44,051 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:44,955 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:45,909 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:46,813 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:47,717 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:48,722 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:49,726 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:50,630 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:51,685 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:52,840 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:53,794 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:54,849 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:55,703 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:56,707 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:57,611 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:58,516 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:48:59,470 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:00,575 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:01,630 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:02,835 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:03,889 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:05,043 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:06,248 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:07,452 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:08,255 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:09,308 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:10,262 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:11,466 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:12,619 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:13,772 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:14,876 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:16,030 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:16,983 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:17,836 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:19,040 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:20,195 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:21,048 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:21,952 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:22,805 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:23,909 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:24,863 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:26,016 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:26,968 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:28,026 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:29,079 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:29,933 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:30,887 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:31,841 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:32,896 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:33,949 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:35,053 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:36,006 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:37,009 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:38,214 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:39,370 [WARN] org.apache.kafka.clients.NetworkClient {kafka-producer-network-thread | producer-1} [Producer clientId=producer-1] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-12-31 16:49:39,529 [INFO] org.apache.kafka.clients.producer.KafkaProducer {SpringApplicationShutdownHook} [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-12-31 16:49:39,534 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Metrics scheduler closed
+2021-12-31 16:49:39,535 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-12-31 16:49:39,535 [INFO] org.apache.kafka.common.metrics.Metrics {SpringApplicationShutdownHook} Metrics reporters closed
+2021-12-31 16:49:39,535 [INFO] org.apache.kafka.common.utils.AppInfoParser {SpringApplicationShutdownHook} App info kafka.producer for producer-1 unregistered
+2021-12-31 16:49:39,537 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} HikariPool-1 - Shutdown initiated...
+2021-12-31 16:49:39,544 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} HikariPool-1 - Shutdown completed.
